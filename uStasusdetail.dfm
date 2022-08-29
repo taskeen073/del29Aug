@@ -1,0 +1,57 @@
+object frstatusdetail: Tfrstatusdetail
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = True
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  DesignLeft = 2
+  DesignTop = 2
+  object IWEdit1: TIWEdit
+    Left = 176
+    Top = 184
+    Width = 200
+    Height = 32
+    StyleRenderOptions.RenderBorder = False
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    SubmitOnAsyncEvent = True
+    Text = 'IWEdit1'
+  end
+  object IWEdit2: TIWEdit
+    Left = 176
+    Top = 222
+    Width = 200
+    Height = 32
+    StyleRenderOptions.RenderBorder = False
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWEdit2'
+    SubmitOnAsyncEvent = True
+    Text = 'IWEdit2'
+  end
+  object IWButton1: TIWButton
+    Left = 48
+    Top = 40
+    Width = 120
+    Height = 30
+    Caption = 'IWButton1'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    OnClick = IWButton1Click
+  end
+end
